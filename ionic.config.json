@@ -1,0 +1,7 @@
+{
+  "name": "confeitaria-ionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
