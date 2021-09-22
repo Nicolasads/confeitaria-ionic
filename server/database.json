@@ -1,0 +1,39 @@
+{
+    "produtos": [
+            {
+                "id": 1,
+                "name": "Bolo de cenoura",
+                "valor": 18,
+                "imgUrl": "https://comidinhasdochef.com/wp-content/uploads/2020/02/Bolo-de-Cenoura-Tudo-Gostoso.jpg",
+                "descricao": "A origem desta receita é incerta, mas muitos historiadores acreditam que sua origem se deu em pudins de cenoura que faziam parte da alimentação dos europeus na Idade Média, época onde açucares e adoçantes eram caros, por isso, muitas pessoas usavam cenouras como substituto do açúcar."
+            },
+            {
+                "id": 2,
+                "name": "Bolo de morango",
+                "valor": 25,
+                "imgUrl": "https://www.receitasagora.com.br/wp-content/uploads/2020/09/receita-de-bolo-de-morango-com-leite-condensado-1.jpg",
+                "descricao": "Traduzido do inglês-Bolo de morango é um bolo que usa morango como ingrediente principal. Morangos podem ser usados ​​na massa do bolo, em cima dos bolos e na cobertura do bolo de morango. Alguns são servidos resfriados ou parcialmente congelados e às vezes são servidos como um prato do Dia dos Namorados."
+            },
+            {
+                "id": 3,
+                "name": "Bolo de Nutella",
+                "valor": 28,
+                "imgUrl": "https://www.receitasagora.com.br/wp-content/uploads/2020/09/receita-de-bolo-de-morango-com-leite-condensado-1.jpg",
+                "descricao": "Nutella é um doce que todo mundo ama, por isso os bolos de nutella sempre fazem o maior sucesso, e que tal você experimentar?"
+            },
+            {
+                "id": 4,
+                "name": "Bolo de brigadeiro",
+                "valor": 20,
+                "imgUrl": "https://amp.receitadevovo.com.br/wp-content/uploads/2020/10/bolo-de-nutella.jpg",
+                "descricao": "Um bolo clássico que todo mundo ama com aquele gostinho de quero mais e ótimo para festas."
+            },
+            {
+                "id": 5,
+                "name": "Bolo de trigo",
+                "valor": 15,
+                "imgUrl": "https://t2.rg.ltmcdn.com/pt/images/1/8/3/bolo_de_trigo_simples_381_orig.jpg",
+                "descricao": "Um bolo simples e saboroso, ótimo para servir com café."
+            }
+    ]
+}
