@@ -6,10 +6,21 @@
   </ion-header>
 
   <div *ngFor="let bolo of produto">
-    <div (click)="navigate()">
+    <ion-card (click)="navigate()">
       <img src={{bolo.imgUrl}} alt={{bolo.name}}>
-      <p>Nome: {{bolo.name}} </p>
-      <p>Preço: R$ {{bolo.valor}}</p>
-    </div>
+      <ion-card-header>
+        <ion-card-title>
+          {{bolo.name}}
+        </ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        {{bolo.descricao}}
+      </ion-card-content>
+
+      <ion-card-content>
+        Preço: R$ {{bolo.valor}}
+      </ion-card-content>
+    </ion-card>
   </div>
 </ion-content>

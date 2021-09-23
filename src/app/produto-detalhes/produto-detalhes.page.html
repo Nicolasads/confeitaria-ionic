@@ -1,6 +1,9 @@
 <ion-header collapse="condense">
   <ion-toolbar color="danger">
-    <ion-title color="light">Bolo de Nutella</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab1" text="Voltar"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="light">Bolo de Cenoura</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -19,6 +22,6 @@
 
 <ion-footer>
   <ion-toolbar style="border: none;">
-    <ion-button color="danger" expand="block">Fazer Pedido</ion-button>
+    <ion-button color="danger" expand="block" (click)="navigate()">Fazer Pedido</ion-button>
   </ion-toolbar>
 </ion-footer>

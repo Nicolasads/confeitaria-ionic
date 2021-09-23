@@ -1,0 +1,41 @@
+<ion-header collapse="condense">
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/produto-detalhes" text="Voltar"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="light">Finalize seu pedido</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form class="ion-margin">
+    <ion-item class="ion-margin-bottom">
+      <ion-label position="floating" color="medium">Bolo Selecionado</ion-label>
+      <ion-input [(ngModel)]="pedido.nomePedido" name="nomePedido"></ion-input>
+    </ion-item>
+
+    <div>
+      <h5 class="ion-margin-start">Digite seu endereço</h5>
+
+      <ion-item>
+        <ion-label position="floating" color="medium">Seu nome</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating" color="medium">Telefone</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating" color="medium">Endereço</ion-label>
+        <ion-textarea></ion-textarea>
+      </ion-item>
+    </div>
+
+    <div class="ion-margin-top">
+      <ion-button color="danger" expand="block">Fazer Pedido</ion-button>
+    </div>
+  </form>
+</ion-content>
