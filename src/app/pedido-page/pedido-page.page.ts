@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LoadingController } from '@ionic/angular';
+import { AlertController, LoadingController } from '@ionic/angular';
 
 interface Pedido {
   nomePedido: string;
@@ -15,7 +15,10 @@ export class PedidoPagePage implements OnInit {
     nomePedido: 'Bolo de Cenoura',
   };
 
-  constructor(public loadingController: LoadingController) {}
+  constructor(
+    public loadingController: LoadingController,
+    private alertController: AlertController
+  ) {}
 
   ngOnInit() {
     this.presentLoading();
@@ -32,5 +35,34 @@ export class PedidoPagePage implements OnInit {
 
     const { role, data } = await loading.onDidDismiss();
     console.log('Loading dismissed!');
+  }
+
+  async pedidoLoading() {
+    const loading = await this.loadingController.create({
+      cssClass: 'my-custom-class',
+      message: 'Gerando seu pedido...',
+      spinner: 'crescent',
+      duration: 1500,
+    });
+    await loading.present();
+
+    const { role, data } = await loading.onDidDismiss();
+    console.log('Loading dismissed!');
+
+    const alert = await this.alertController.create({
+      cssClass: 'my-custom-class',
+      header: 'Sucesso!',
+      message: 'Pedido realizado com sucesso!',
+      buttons: [
+        {
+          text: 'Ok',
+          handler: () => {
+            console.log('Confirm Okay');
+          },
+        },
+      ],
+    });
+
+    await alert.present();
   }
 }
